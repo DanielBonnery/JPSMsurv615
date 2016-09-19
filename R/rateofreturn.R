@@ -4,7 +4,7 @@
 #'
 #' \itemize{
 #'   \item Sector. Sector ("Oil" or "Service")
-#'   \item rateofreturn. Rate of return
+#'   \item Rate. Rate of return
 #'   ...
 #' }
 #'

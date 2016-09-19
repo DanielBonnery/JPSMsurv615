@@ -17,7 +17,7 @@ A dataset containing the rate of return of share of different companies. The var
 \details{
 \itemize{
   \item Sector. Sector ("Oil" or "Service")
-  \item rateofreturn. Rate of return
+  \item Rate. Rate of return
   ...
 }
 }
