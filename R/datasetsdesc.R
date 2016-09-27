@@ -1,4 +1,4 @@
-#' Prices of 50,000 round cut diamonds.
+#' Rate of return of share.
 #'
 #' A dataset containing the rate of return of share of different companies. The variables are as follows:
 #'

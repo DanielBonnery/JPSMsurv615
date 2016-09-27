@@ -3,7 +3,7 @@
 \docType{data}
 \name{rateofreturn}
 \alias{rateofreturn}
-\title{Prices of 50,000 round cut diamonds.}
+\title{Rate of return of share.}
 \format{A data frame with 18 rows and 2 variables}
 \source{
 imaginary
