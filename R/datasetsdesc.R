@@ -44,3 +44,31 @@
 #' @source Applied Linear Regression by Sanford Weisberg
 "forbes"
 
+
+#' hrs_wealth' 
+#'
+#' hrs_wealth' 
+#'
+#' \itemize{
+#'   \item hhidpn
+#'   \item  h7atotw
+#'   \item  h8atotw
+#'   \item  h9atotw
+#'   \item  s9edyrs
+#'   \item  s9gender
+#'   \item edu. (computed from s9gender)
+#' }
+#'
+#' @format A data frame with 17 rows and 2 variables
+#' @source Applied Linear Regression by Sanford Weisberg
+"hrs_wealth"
+
+if(FALSE){hrs_wealth<-read.csv("../../../Datasets/Lectures/hrs_wealth.txt",header = FALSE,sep=" ")
+names(hrs_wealth)<-tolower(strsplit("HHIDPN H7ATOTW H8ATOTW H9ATOTW S9EDYRS S9GENDER",split=" ")[[1]])
+hrs_wealth$edu<-cut(hrs_wealth$s9edyrs, c(0,11,12,16,Inf))
+anova(lm(h9atotw~edu,data=hrs_wealth))
+Y<-aggregate(hrs_wealth$h9atotw,mean,by=list(hrs_wealth$edu))
+Y<-aggregate(hrs_wealth$h9atotw,sd,by=list(hrs_wealth$edu))
+Y$x/sqrt(c(1978,3327,2209,2543))
+save(hrs_wealth,"data/hrs_wealth.rdata")
+}
