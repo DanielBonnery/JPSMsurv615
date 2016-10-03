@@ -1,3 +1,6 @@
+if(FALSE){
+  setwd(file.path(Mydirectories::box.directory(),"Teaching/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
+  }
 #' Rate of return of share.
 #'
 #' A dataset containing the rate of return of share of different companies. The variables are as follows:
@@ -9,7 +12,8 @@
 #' }
 #'
 #' @format A data frame with 18 rows and 2 variables
-#' @source imaginary
+#' @source 
+# imaginary
 "rateofreturn"
 #> [1] "rateofreturn"
 
@@ -23,11 +27,14 @@
 #' }
 #'
 #' @format A data frame with 27 rows and 2 variables
-#' @source Neter Kutner Nachtsheim and Wasserman, Applied Linear Statistical Models, fourth ed., p.703.
+#' @source 
+# Neter Kutner Nachtsheim and Wasserman, Applied Linear Statistical Models, fourth ed., p.703.
 "productivity.improvement"
 #> [1] "productivity.improvement"
 
-#productivity.improvement<-data.frame(  level=as.factor(rep(c("Low","Moderate","High"),c(9,12,6))),  improvement=c(7.6,8.2,6.8,5.8,6.9,6.6,6.3,7.7,6.0,6.7,8.1,9.4,8.6,7.8,7.7,8.9,7.9,8.3,8.7,7.1,8.4,8.5,9.7,10.2,7.8,9.6,9.5));save(productivity.improvement,file="data/productivity.improvement.Rdata")
+if(FALSE){
+  productivity.improvement<-data.frame(  level=ordered(rep(c("Low","Moderate","High"),c(9,12,6)),levels=c("Low","Moderate","High")),  improvement=c(7.6,8.2,6.8,5.8,6.9,6.6,6.3,7.7,6.0,6.7,8.1,9.4,8.6,7.8,7.7,8.9,7.9,8.3,8.7,7.1,8.4,8.5,9.7,10.2,7.8,9.6,9.5));save(productivity.improvement,file="data/productivity.improvement.Rdata")
+  }
 
 
 
@@ -41,7 +48,8 @@
 #' }
 #'
 #' @format A data frame with 17 rows and 2 variables
-#' @source Applied Linear Regression by Sanford Weisberg
+#' @source 
+# Applied Linear Regression by Sanford Weisberg
 "forbes"
 
 
@@ -60,7 +68,8 @@
 #' }
 #'
 #' @format A data frame with 17 rows and 2 variables
-#' @source Applied Linear Regression by Sanford Weisberg
+#' @source 
+# Applied Linear Regression by Sanford Weisberg
 "hrs_wealth"
 
 if(FALSE){hrs_wealth<-read.csv("../../../Datasets/Lectures/hrs_wealth.txt",header = FALSE,sep=" ")
@@ -87,7 +96,8 @@ save(hrs_wealth,"data/hrs_wealth.rdata")
 #' }
 #'
 #' @format A data frame with 36 rows and 3 variables
-#' @source Applied Linear Regression by Sanford Weisberg. Exercise 16.13
+#' @source 
+# Applied Linear Regression by Sanford Weisberg. Exercise 16.13
 "cash.offers"
 
 if(FALSE){
@@ -110,7 +120,8 @@ if(FALSE){
 #' }
 #'
 #' @format A data frame with 24 rows and 2 variables
-#' @source Applied Linear Regression by Sanford Weisberg. Exercise 7.31
+#' @source 
+# Applied Linear Regression by Sanford Weisberg. Exercise 7.31
 "mileage"
 
 if(FALSE){
