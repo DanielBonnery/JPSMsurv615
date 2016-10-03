@@ -114,12 +114,9 @@ if(FALSE){
 "mileage"
 
 if(FALSE){
-  cash.offers<-data.frame(dealer=rep(1:12,3),age.group=rep(as.factor(c("Young","Middle","Elderly")),each=12),
-                          cash.offer=c(23,25,21,22,21,22,20,23,19,22,19,21,
-                                       28,27,27,29,26,29,27,30,28,27,26,29,
-                                       23,20,25,21,22,23,21,20,19,20,22,21))
+  mileage<-data.frame(speed=rep(seq(35,60,by=5),each=2), consumption=c(22,20,28,31,37,38,41,39,34,37,27,30))
   setwd(file.path(Mydirectories::box.directory(),"Teaching/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
-  save(cash.offers,file="data/cash.offers.rdata")
+  save(mileage,file="data/mileage.rdata")
 }
 
 
