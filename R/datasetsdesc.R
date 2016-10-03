@@ -72,3 +72,29 @@ Y<-aggregate(hrs_wealth$h9atotw,sd,by=list(hrs_wealth$edu))
 Y$x/sqrt(c(1978,3327,2209,2543))
 save(hrs_wealth,"data/hrs_wealth.rdata")
 }
+
+
+
+#' cash.offers' data on cash offers for cars.
+#'
+#' cash.offers' data giving cash offer for a car and age. A consumer organization sutdied the effect of age of automobile owner on size of cash for a used car by utilizing 12 persons in each of three age groups  (young, middle, elderly) who acted as the owner of a used car. A medium price, six-year-old car was selected for the experiment, an the ownsers solicited cash offers for this car from 36 dealers selected at random from the dealers in the region. Randomization was used in assigning the dealers to the woners. 
+                                                                                                                                                                                                                                                                  
+#'
+#' \itemize{
+#'   \item age.group. Age group of the owner, factor variable. level: Young, Middle, Elderly
+#'   \item dealer. 
+#'   \item cash.offer. Cash offer for the car in hundreds of dollars.
+#' }
+#'
+#' @format A data frame with 36 rows and 3 variables
+#' @source Applied Linear Regression by Sanford Weisberg. Exercise 16.13
+"cash.offers"
+
+if(FALSE){
+  cash.offers<-data.frame(rep(1:12,3),rep(as.factor(c("Young","Middle","Elderly")),each=12),
+                          c(23,25,21,22,21,22,20,23,19,22,19,21,
+                            28,27,27,29,26,29,27,30,28,27,26,29,
+                            23,20,25,21,22,23,21,20,19,20,22,21))
+  setwd(file.path(Mydirectories::box.directory(),"Teaching/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
+  save(cash.offers,file="data/cash.offers.rdata")
+}
