@@ -27,7 +27,7 @@ if(FALSE){
 #' }
 #'
 #' @format A data frame with 27 rows and 2 variables
-#' @source 
+#' @source 1
 # Neter Kutner Nachtsheim and Wasserman, Applied Linear Statistical Models, fourth ed., p.703.
 "productivity.improvement"
 #> [1] "productivity.improvement"
@@ -48,7 +48,7 @@ if(FALSE){
 #' }
 #'
 #' @format A data frame with 17 rows and 2 variables
-#' @source 
+#' @source 1
 # Applied Linear Regression by Sanford Weisberg
 "forbes"
 
@@ -68,7 +68,7 @@ if(FALSE){
 #' }
 #'
 #' @format A data frame with 17 rows and 2 variables
-#' @source 
+#' @source 1
 # Applied Linear Regression by Sanford Weisberg
 "hrs_wealth"
 
@@ -96,12 +96,12 @@ save(hrs_wealth,"data/hrs_wealth.rdata")
 #' }
 #'
 #' @format A data frame with 36 rows and 3 variables
-#' @source 
+#' @source 1
 # Applied Linear Regression by Sanford Weisberg. Exercise 16.13
 "cash.offers"
 
 if(FALSE){
-  cash.offers<-data.frame(dealer=rep(1:12,3),age.group=rep(as.factor(c("Young","Middle","Elderly")),each=12),
+  cash.offers<-data.frame(dealer=rep(1:12,3),age.group=rep(ordered(c("Young","Middle","Elderly"),levels=c("Young","Middle","Elderly")),each=12),
                           cash.offer=c(23,25,21,22,21,22,20,23,19,22,19,21,
                             28,27,27,29,26,29,27,30,28,27,26,29,
                             23,20,25,21,22,23,21,20,19,20,22,21))
@@ -120,7 +120,7 @@ if(FALSE){
 #' }
 #'
 #' @format A data frame with 24 rows and 2 variables
-#' @source 
+#' @source 1
 # Applied Linear Regression by Sanford Weisberg. Exercise 7.31
 "mileage"
 
