@@ -155,3 +155,25 @@ if(FALSE){
 }
 
 
+#' grades' grades from hw1 and quiz
+#'
+#'
+#' \itemize{
+#'   \item HW1. homework 1 grades
+#'   \item Quiz. Quiz grades
+#' }
+#'
+#' @format A data frame
+#' @source 1
+"grades"
+
+if(FALSE){
+  grades<-data.frame(HW1=c(22,19,17.5,17,17,16,16,15.5,15,15,15,15,14.5,14.5,14.5,13.5,13,12.5,10.75,5.75,4.5),
+                     Quiz=c(7,9,7,6,7,8,7,4,5,5,6,5,3,3,3,10,2,2,5,3,4))
+  setwd(file.path(Mydirectories::box.directory(),"Teaching/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
+  save(grades,file="data/grades.rdata")
+}
+
+
+
+
