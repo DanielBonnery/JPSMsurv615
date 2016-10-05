@@ -33,7 +33,9 @@ if(FALSE){
 #> [1] "productivity.improvement"
 
 if(FALSE){
-  productivity.improvement<-data.frame(  level=ordered(rep(c("Low","Moderate","High"),c(9,12,6)),levels=c("Low","Moderate","High")),  improvement=c(7.6,8.2,6.8,5.8,6.9,6.6,6.3,7.7,6.0,6.7,8.1,9.4,8.6,7.8,7.7,8.9,7.9,8.3,8.7,7.1,8.4,8.5,9.7,10.2,7.8,9.6,9.5));save(productivity.improvement,file="data/productivity.improvement.Rdata")
+  productivity.improvement<-data.frame(  level=ordered(rep(c("Low","Moderate","High"),c(9,12,6)),levels=c("Low","Moderate","High")),  
+                                         improvement=c(7.6,8.2,6.8,5.8,6.9,6.6,6.3,7.7,6.0,6.7,8.1,9.4,8.6,7.8,7.7,8.9,7.9,8.3,8.7,7.1,8.4,8.5,9.7,10.2,7.8,9.6,9.5));
+  save(productivity.improvement,file="data/productivity.improvement.Rdata")
   }
 
 
@@ -130,5 +132,26 @@ if(FALSE){
   save(mileage,file="data/mileage.rdata")
 }
 
+
+#' airfreight.breakage' data from of number of breakage versus number of transfers
+#'
+#' airfreight.breakage' A substance used in biological and medical research is shipped by aurfreight to users in cartons of 1000 ampules. The data belowm involving 10 shipments were collected on the number of times the carton was transferred from one aircraft to another over the shipment route (transfers) and the number of ampules found to be vroken upon arrival (broken.ampules)
+#'
+#' \itemize{
+#'   \item transfers. Constant speed (in miles per hour)
+#'   \item broken.ampules. Consumption (in miles per gallon)
+#' }
+#'
+#' @format A data frame with 10 rows and 2 variables
+#' @source 1
+# Applied Linear Regression by Sanford Weisberg. Exercise 1.21
+"airfreight.breakage"
+
+if(FALSE){
+  airfreight.breakage<-data.frame(transfers=c(1,0,2,0,3,1,0,1,2,0),
+                                  broken.ampules=c(16,9,17,12,22,13,8,15,19,11))
+  setwd(file.path(Mydirectories::box.directory(),"Teaching/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
+  save(airfreight.breakage,file="data/airfreight.breakage.rdata")
+}
 
 
