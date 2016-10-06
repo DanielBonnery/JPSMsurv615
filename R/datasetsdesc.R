@@ -190,8 +190,8 @@ if(FALSE){
 
 if(FALSE){
   power.cells<-data.frame(cycles=c(150,86,49,288,157,131,184,109,279,235,224),
-                     c(0.6,1,1.4,0.6,1,1,1,1.4,0.6,1,1.4),
-                     c(10,10,10,20,20,20,20,20,30,30,30))
+                     charge.rate=c(0.6,1,1.4,0.6,1,1,1,1.4,0.6,1,1.4),
+                     temperature=c(10,10,10,20,20,20,20,20,30,30,30))
   setwd(file.path(Mydirectories::box.directory(),"Teaching/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
   save(power.cells,file="data/power.cells.rdata")
 }
