@@ -175,5 +175,30 @@ if(FALSE){
 }
 
 
+#' power.cells' A researcher studied the effects of the charge rate and temperature on the life of a new type of poser cell in a preliminqry small-scale experiment. The charge rate $($X_1$) was controlled at three levels ($.6$. $1$ and $1.4$ amperes) and the ambient temperature ($X_2$) was controlled at three levels (10,20,30 Celcius degrees). Factors pertaining to the discharge of the power cell were hjeld at fixed levels. The life of the power cell ($Y$) was measured in terms  o f the number of discharge-charge cycles that power cell underwent vefore it failed. 
+#'
+#'
+#' \itemize{
+#'   \item cycles. Number of Cycles
+#'   \item charge.rate. Charge rate (in amperes)
+#'   \item temperature. Temperature (in Celcius)
+#' }
+#'
+#' @format A data frame
+#' @source S.<. Sidik, H.F. Leivecki and J. M. Bozek, Cycles Till Failure of Silver-Zinc Cells with Competing Failure Modes - preliminary data analysus, NASA Technical Memorandum 81556, 1980
+"power.cells"
+
+if(FALSE){
+  power.cells<-data.frame(cycles=c(150,86,49,288,157,131,184,109,279,235,224),
+                     c(0.6,1,1.4,0.6,1,1,1,1.4,0.6,1,1.4),
+                     c(10,10,10,20,20,20,20,20,30,30,30))
+  setwd(file.path(Mydirectories::box.directory(),"Teaching/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
+  save(grades,file="data/grades.rdata")
+}
 
 
+
+
+150,86,49,288,157,131,184,109,279,235,224
+0.6,1,1.4,0.6,1,1,1,1.4,0.6,1,1.4
+10,10,10,20,20,20,20,20,30,30,30
