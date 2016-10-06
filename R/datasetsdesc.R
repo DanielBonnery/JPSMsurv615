@@ -198,3 +198,30 @@ if(FALSE){
 
 
 
+#' job.proficiency' A personnel officer in a fovenmental agency administered four newly developed aptidute tests to each of $25$ applicants for entry-level clerical positions in the agency. For purpose of the stdy, all 25 applicants were accepted for positions irrespective of their test scores. Ager a probationary perio, each applicant was rated for proficiency on the job. the scores on the four tests ($X_1$, $X_2$, $X_3$, $X_4$) and the job proviviency score ($Y$) for the 25 employees were as follows
+#'
+#'
+#' \itemize{
+#'   \item Y. job proficiency score
+#'   \item X1. test 1 score 
+#'   \item X2. test 2 score 
+#'   \item X3. test 3 score 
+#'   \item X4. test 4 score 
+#' }
+#'
+#' @format A data frame
+#' @source S.<. Sidik, H.F. Leivecki and J. M. Bozek, Cycles Till Failure of Silver-Zinc Cells with Competing Failure Modes - preliminary data analysus, NASA Technical Memorandum 81556, 1980
+"power.cells"
+
+if(FALSE){
+  job.proficiency<-data.frame(Y=c(88,80,96,76,80,73,58,116,104,99,64,126,94,71,111,109,100,127,99,82,67,109,78,115,83),
+                          X1=c(86,62,110,101,100,78,120,105,112,120,87,133,140,84,106,109,104,150,98,120,74,96,104,94,91),
+                          X2=c(110,97,107,117,101,85,77,122,119,89,81,120,121,113,102,129,83,118,125,94,121,114,73,121,129),
+                          X3=c(100,99,103,93,95,95,80,116,106,105,90,113,96,98,109,102,100,107,108,95,91,114,93,115,97),
+                          X4=c(87,100,103,95,88,84,74,102,105,97,88,108,89,78,109,108,102,110,95,90,85,103,80,104,83))
+  setwd(file.path(Mydirectories::box.directory(),"Teaching/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
+  save(job.proficiency,file="data/job.proficiency.rdata")
+}
+
+
+
