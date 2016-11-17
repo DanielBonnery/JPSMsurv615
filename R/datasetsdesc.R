@@ -266,8 +266,8 @@ matrix(c(48.0,50.0,51.0,2.3,
   
   names(hospital)<-c("Y","X1","X2","X3")
   setwd(file.path(Mydirectories::Dropbox.directory(),"Travail/Enseignement/LecturesJPSM/Surv_615_Regression_and_analysis_of_variance/Handouts_Exams_HW/data_package/JPSMSurv615/"))
-  write.csv(hospitals,file="../../Data/hospitals.csv")
-  save(hospitals,file="data/hospitals.rdata")
+  write.csv(hospital,file="../../../Datasets/hospital.csv")
+  save(hospital,file="data/hospital.rdata")
   }
 
 
